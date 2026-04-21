@@ -11,9 +11,10 @@ public class MainRunner {
                 "Science",87);
 
         if(student1.equals(student2)){
-            System.out.println("both student 1 and student 2 are equal");
+            System.out.println("both student 1 and student 2 are similar");
         }
-        else System.out.println("they are not equal");
+        else System.out.println("Student 1 and student 2 are not similar");
+
 
         Employee employee1=new Employee(65,"Jake",
                 2635.5D,"Development",2);
@@ -28,6 +29,7 @@ public class MainRunner {
             System.out.println("employees are not similar");
         }
 
+
         Car car1=new Car(725,"Normal car","Faalthu",
                 34535432.56D,2036);
 
@@ -38,6 +40,7 @@ public class MainRunner {
             System.out.println("Both the cars are same");
         }
         else System.out.println("both the cars are not similar");
+
 
         Book book1=new Book(344,"percy jackson",
                 "Richard",3445.3,300);
@@ -51,12 +54,41 @@ public class MainRunner {
         }
         else System.out.println("book1 and book2 are different books");
 
-        Product product1=new Product(244,"Merch",235.5D,"amazon",2);
-        Product product2=new Product(634,"Merch",2355.4D,"Flipcart",2);
+
+        Product product1=new Product(244,"Merch",235.5D,
+                "amazon",2);
+
+        Product product2=new Product(634,"Merch",2355.4D,
+                "Flipcart",2);
+
         if(product2.equals(product1)){
             System.out.println("both the products are same");
         }
         else System.out.println("both the products are different");
+
+
+        Chair chair1=new Chair("Teak wood",5,2,
+                "Pink",true);
+
+        Chair chair2=new Chair("Teak wood",5,2,
+                "Pink",true);
+
+        if(chair1.equals(chair2)){
+            System.out.println("Similar chairs");
+        }
+        else System.out.println("not similar chairs");
+
+
+        Marker marker1=new Marker(3,"sharp nib",
+                4,"Pink");
+
+        Marker marker2=new Marker(5,"sharp nib",
+                4,"Pink");
+
+        if(marker2.equals(marker1)){
+            System.out.println("Similar markers");
+        }
+        else System.out.println("Dissimilar markers");
 
     }
 }
